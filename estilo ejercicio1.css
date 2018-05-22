@@ -1,0 +1,30 @@
+.contenedor h2{
+    color: midnightblue;
+}
+
+p span{
+    color: red;
+}
+
+p a{
+    color: yellow;
+}
+
+.contenedor2 h3{
+    color: aqua;
+}
+
+c {
+    text-decoration: underline;
+    color: red;
+}
+
+y{
+    text-decoration: underline;
+    color: yellow;
+}
+
+table tr{
+    color: blue;
+}
+
