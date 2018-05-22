@@ -14,3 +14,12 @@ img{
     text-decoration: underline;
     color: blue;
 }
+
+aside {
+    border: solid 3px;
+}
+
+section{
+    border: solid 3px;
+    padding: 10px;
+}
