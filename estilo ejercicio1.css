@@ -35,3 +35,15 @@ table tr{
 .contenedor3 t{
     color: seagreen;
 }
+
+table span{
+color: darkgoldenrod;
+}
+
+table a{
+    color: red;
+}
+
+table o{
+    color: aqua;
+}
