@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    font-size: 80px;
+    background-color: #117722;
+}
+span::before{
+    content: "Profesor Julian villegas";
+}
+@media only screen and (max-width: 1024px) {
+    body{
+    background-color: #8A3300;
+    }
+    span::before{
+    content: "Profe julian";
+    }
+}
+
+@media only screen and ( max-width: 768px ){
+    body{
+    background-color: #8901aa;
+    }
+    span::before{
+    content: "profito julian";
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+    background-color: #781032;
+    }
+    span::before{
+    content: "profito guapo";
+    }
+}
+
+@media only screen and (max-width: 320px){
+    body{
+    background-color: #ff74a4;
+    }
+    span::before{
+    content: "Bebe julian";
+    }
+}
