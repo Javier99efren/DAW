@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+        <title> introducción JavaScript 13 </title>
+        <meta charset="utf-8"/>
+        <script type="text/javascript">
+
+            var x = "Mozilla";
+            var empty = "";
+            console.log("Mozilla is " + x.length + " code units long");
+            /* "Mozilla is 7 code units long" */ 
+            console.log('The empty string has a length of ' + empty.length); 
+            /* "The empty string has a length of 0" */
+            
+            console.log("-----concat c:------");
+            
+            var cadena1="Oh ";
+            var cadena2="qué maravillosa ";
+            var cadena3="mañana."; 
+            var cadena4=cadena1.concat(cadena2,cadena3)
+            console.log(cadena4);
+            // devuelve "Oh qué maravillosa mañana'." 
+            
+            console.log("------uppercase------");
+            console.log( "alphabet".toUpperCase() ); // "ALPHABET"
+
+            console.log("-------lowercase--------");
+            var textoMayusculas="ALPHABET";
+            console.log(textoMayusculas.toLowerCase());
+            
+            console.log("------charat--------");
+            
+            var cualquierCadena="Brave new world"; 
+            console.log("El carácter en el índice 0 es '" + cualquierCadena.charAt(0) + "") 
+            console.log("El carácter en el índice 1 es '" + cualquierCadena.charAt(1) + "") 
+            console.log("El carácter en el índice 2 es '" + cualquierCadena.charAt(2) + "") 
+            console.log("El carácter en el índice 3 es '" + cualquierCadena.charAt(3) + "") 
+            console.log("El carácter en el índice 4 es '" + cualquierCadena.charAt(4) + "") 
+            console.log("El carácter en el índice 999 es '" + cualquierCadena.charAt(999) + "'")
+            
+            console.log("--------indexof-------");
+            console.log("Blue Whale".indexOf("Blue")) ;// returns 0 
+            console.log("Blue Whale".indexOf("Blute")); // returns -1 
+            console.log("Blue Whale".indexOf("Whale",0)); // returns 5 
+            console.log("Blue Whale".indexOf("Whale",5)); // returns 5 
+            console.log("Blue Whale".indexOf("",9)); // returns 9 
+            console.log("Blue Whale".indexOf("",10)); // returns 10 
+            console.log("Blue Whale".indexOf("",11)); // returns 10 
+
+            console.log("-------lastindexof-------");
+            
+            console.log("canal".lastIndexOf("a"));// returns 3 
+            console.log("canal".lastIndexOf("a",2)); // returns 1 
+            console.log("canal".lastIndexOf("a",0)); // returns -1 
+            console.log("canal".lastIndexOf("x")); // returns -1 
+
+
+            console.log("-------SubString------");
+            
+            // asume una función print ya definida 
+            var cualquierCadena = "Mozilla"; 
+            // Muestra "Moz" 
+            console.log(cualquierCadena.substring(0,3)); 
+            console.log(cualquierCadena.substring(3,0)); 
+            // Muestra "lla" 
+            console.log(cualquierCadena.substring(4,7)); 
+            console.log(cualquierCadena.substring(7,4)); 
+            // Muestra "Mozill" 
+            console.log(cualquierCadena.substring(0,6)); 
+            console.log(cualquierCadena.substring(6,0)); 
+            // Muestra "Mozilla" 
+            console.log(cualquierCadena.substring(0,7)); 
+            console.log(cualquierCadena.substring(0,10)); 
+            
+            console.log("------split-------");
+            var str = "How are you doing today?";
+            var res = str.split(" ");
+            
+            console.log(res);
+        </script>
+    </head>
+    <body>
+        <p> un parrafo de introducción  </p>
+    </body>
+</html>
