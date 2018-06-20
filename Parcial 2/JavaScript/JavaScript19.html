@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title> introducción JavaScript 11 </title>
+        <meta charset="utf-8"/>
+        <script type="text/javascript">
+            
+            var vocales = ["a","e","i","o","u"];
+            var n = vocales.length; // n=5
+            console.log(n);
+            
+            var array1 = [1,2,3];
+            array2 = array1.concat(4,5,6); //array2 = [1,2,3,4,5]
+            array3 = array1.concat([4,5,6]); //array3 = [1,2,3,4,5,6]
+            console.log(array2);
+            console.log(array3);
+            
+            var array = ["hola", "mundo"];
+            var texto = array.join(""); // texto = "holamundo"
+            texto = array.join(""); // texto = "hola mundo"
+            console.log(texto);
+            
+            var arrayn1 = [1,2,3];
+            var ultimon1 = arrayn1.pop();
+            console.log(ultimon1);
+            // ahora arrayn1 = [1,2], ultimo = 3
+            
+            var arrayn2 = [1,2,3];
+            arrayn2.push(4);
+            // ahora arrayn2 = [1,2,3,4]
+
+            var arrayn3 = [1,2,3];
+            var primero = arrayn3.shift();
+            console.log(primero);
+            // ahora arrayn3 = [2,3], primero = 1
+            
+            var arrayn4 = [1,2,3];
+            arrayn4.unshift(0);
+            console.log(arrayn4);
+            // ahora arrayn4 = [0,1,2,3]
+            
+            var arrayn5 = [1,2,3];
+            arrayn5.reverse();
+            console.log(arrayn5);
+            // ahora arrayn5 = [3,2,1]
+        </script>
+    </head>
+    <body>
+        <p> un parrafo de introducción </p>
+    </body>
+</html>
