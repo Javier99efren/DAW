@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Ejemplo OnResize</title>
+    <script>
+    function medidas(){
+        var alto = document.body.clientHeight;
+        var ancho = document.body.clientWidth;
+        document.getElementById("tam").innerHTML="<b>alto:</b> "+alto+"<b>ancho:</b> "+ancho;
+    }
+    </script>
+  </head>
+  <body onresize="medidas();">
+      <div id="tam">
+      </div>
+   </body>
+</html>

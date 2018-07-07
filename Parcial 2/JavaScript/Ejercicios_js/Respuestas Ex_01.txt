@@ -1,0 +1,18 @@
+1.	¿Qué evento usaste para poder ejecutar la actualización de tus datos?
+
+	Utilice el evento onload para que se ejecutaran las funciones creadas al recargar la pagina
+
+
+
+2.	¿Qué código se encarga de agregar los elementos en la lista?
+--- este fue el documento que yo utilize para agregar las respuestas a las etiquetas <li>
+	//creacion de informacion 
+         document.getElementById("nombre").innerHTML="<strong>Javier Efren Marrufo Castillo</strong>";
+         document.getElementById("pasatiempo").innerHTML= "<strong>i liked to play some videogames, some sports like<strong>" +
+         "<strong>voleyball and basketball</strong>";
+         document.getElementById("ciudad_natal").innerHTML ="<strong>i was born in Chetumal the capital of Quintana Roo</strong>";
+
+
+
+3.	¿Qué debería realizar si deseo eliminar los elementos de la lista al realizar un click al listado?
+	deberia de utilizar una combinacion entre remove y onclick para activar el propio remove.

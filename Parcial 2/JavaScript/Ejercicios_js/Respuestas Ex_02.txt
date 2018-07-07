@@ -1,0 +1,34 @@
+1.¿Qué código utilizas para crear una imagen nueva?	
+var libros = [
+	{title: 'El diseño de EveryDay Things',
+-------------img: 'http://ecx.images-amazon.com/images/I/41j2ODGkJDL._AA115_.jpg',
+	autor: 'Don Norman',
+	alreadyRead: false
+},
+
+2.¿Qué código se encarga de agregar todos los elementos al body?
+	
+	document.body.appendChild(libroList);
+	
+
+3.	Identifica el arreglo en el código y escríbelo como si fuera una tabla una base de datos (Filas y Columnas).
+
+for (var i = 0; i <libros.length; i ++) {
+	var libroElem = document.createElement('li');
+	var libroImg = document.createElement('img');
+  	libroImg.src = libros[i].img;
+  	libroElem.appendChild(libroImg);
+  	var libroDesc = document.createTextNode (libros[i].title + ' por ' + libros[i].autor);
+  	libroElem.appendChild(libroDesc);
+  	if (libros[i].alreadyRead) {
+  	libroElem.style.color = 'grey';
+}
+
+	crear elemento listado 
+	crear elemento imagen
+	imagen del libro en su posision "i"
+	añadir el nodo imagenes libro como hijo en elementos libro
+	creacion de texto libros en su posicion i de titulo "por"  mas libros en su posicion i de autores
+	añadir el nodo descripcion libro en elementos libro 
+	si libros en su posicion i ya fue leido se coloca en color gris
+	

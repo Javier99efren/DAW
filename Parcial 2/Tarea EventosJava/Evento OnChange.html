@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Ejemplo OnChange</title>
+    <script>
+    function cambiarColor(id){
+        var color = document.getElementById(id).value;
+        var form = document.getElementById("form1");
+        form.style.backgroundColor = color;
+    }
+    </script>
+    <style>
+    .campo{
+        border: 1px solid #000;
+    }
+    </style>
+  </head>
+  <body>
+    <center>
+      <input type="button" value=" Pulsar boton para saludo... " onClick="window.alert('Hola mundo!')";>
+    </center>
+   </body>
+</html>

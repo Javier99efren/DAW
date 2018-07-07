@@ -1,0 +1,60 @@
+<!Doctype html>
+<html xmlns="http:://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <link href="JavaScript41.css" type="text/css" media="screen" rel="stylesheet"> 
+    <title>Página sencilla</title>
+    <script>
+        function iniciar(){
+            var labels= document.getElementsByClassName("label");
+            for(x = 0; x<labels.length;x++) {
+                labels[x].style.color="blue";
+            }               
+            var negritas=document.getElementsByTagName("b");
+            for(x=0; x<negritas.length;x++){
+                negritas[x].style.textTransform="uppercase";
+            }
+            document.getElementById("apellido").style.fontStyle="italic";
+            document.querySelectorAll("#apellido b")[0].style.fontStyle="normal";
+            
+        var parrafo = document.createElement("p");
+        var contenido = document.createTextNode("hola mundo");
+        parrafo.appendChild(contenido);
+        document.body.appendChild(parrafo);
+
+        var tds=document.getElementsByTagName("td");
+        for(var x=0;x<tds.length;x++){
+            var texto= document.createTextNode(x+1);
+            tds[x].appendChild(texto);
+            tds[x].addEventListener("click",function(){
+                alert(x+1);
+            });
+        }
+        }
+    </script>
+</head>
+<body onload="iniciar();">  
+    <p id="titulo" class="label">Esta pagina es <strong>muy sencilla</strong></p>
+    <p id="Nombre" class="label">Nombre: <strong>Javier Efrén </strong></p> 
+        <p id="apellido" class="label"><b>Apellidos: </b> Marrufo Castillo</p>
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+</table>
+</body>
+</html>

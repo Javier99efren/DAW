@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="autor" content="Felix El Gato" />
+        <meta name="matricula" content="17000000" />
+        <meta name="grupo" content="TI31" />
+        <link rel="stylesheet" href="Ex_01.css">
+        <title>Ex_01 About Me</title>
+    </head>
+    <script type="text/javascript">
+    
+    function addInfo(){
+        //creacion de informacion 
+         document.getElementById("nombre").innerHTML="<strong>Javier Efren Marrufo Castillo</strong>";
+         document.getElementById("pasatiempo").innerHTML= "<strong>i liked to play some videogames, some sports like<strong>" +
+         "<strong>voleyball and basketball</strong>";
+         document.getElementById("ciudad_natal").innerHTML ="<strong>i was born in Chetumal the capital of Quintana Roo</strong>";
+         
+         //imagen
+            var foto = document.createElement("img");
+            document.body.appendChild(foto);
+            foto.setAttribute("src","manzana.jpg");
+         /*var imagen = document.getElementById("foto");
+         imagen.src="manzana.jpg";*/
+            document.getElementById("cuerpo").style.fontFamily = "Arial, sans-serif";
+
+        // listado en color rojo
+        var rojo = document.getElementsByTagName("li");
+        for(x = 0; x<rojo.length; x++){
+        rojo[x].setAttribute("class","listado");
+        }
+}
+   
+  /*
+  -------------------INTENTOS FALLIDOS--------------------------
+  var N =document.getElementsByTagName("nombre");
+        var texto= document.createTextNode("Javier Efren Marrufo Castillo");
+        N.appendChild(texto);
+  
+  
+    var N = document.getElementById("nombre");
+        N.span.innerHTML("javier Efren Marrufo Castillo");
+  
+    var N = document.getElementsById("nombre");
+        var NN = document.createElement("p");
+        NN.innerHTML = "Javier Efren Marrufo Castillo";
+        N.innerHTML(NN);
+     
+    function addNombre(){
+    var N = document.createElement('strong');
+        N.innerHTML="Javier Efren Marrufo Castillo";
+        document.getElementById("nombre").appendChild(N);
+    }
+        var imagen = document.getElementsByTagName("img");
+        imagen.src = "https://biotrendies.com/wp-content/uploads/2015/06/manzana.jpg";
+
+    var N = document.getElementById("nombre");
+    N.innerHTML="Javier Efren Marrufo Castillo";*/
+
+
+    </script>
+    <style>
+    </style>
+    <body onload="addInfo();" id="cuerpo">
+        <h1>About Me</h1>
+
+        <ul>
+          <li>Nickname: <span id="nombre"></span>
+          <li>Favorites:  <span id="pasatiempo"></span>
+          <li>Hometown: <span id="ciudad_natal"></span>
+         </ul>
+
+       </body>
+      </html>
+          

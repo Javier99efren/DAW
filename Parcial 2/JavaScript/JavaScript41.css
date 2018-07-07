@@ -1,0 +1,13 @@
+table{
+    width: 300px;
+    border: 1px solid #000;
+    border-spacing: 0;
+}
+
+table td{
+    width: 100px;
+    height: 100px;
+    empty-cells: show;
+    content: "";
+    border: 1px solid #ccc;
+}
