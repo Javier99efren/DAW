@@ -1,13 +1,14 @@
+Respuestas Ejercicio Ex_01
 1.	¿Qué evento usaste para poder ejecutar la actualización de tus datos?
 
-	Utilice el evento onload para que se ejecutaran las funciones creadas al recargar la pagina
-
+Utilice el evento onload para que se ejecutaran las funciones creadas al recargar la pagina
 
 
 2.	¿Qué código se encarga de agregar los elementos en la lista?
---- este fue el documento que yo utilize para agregar las respuestas a las etiquetas <li>
-	//creacion de informacion 
-         document.getElementById("nombre").innerHTML="<strong>Javier Efren Marrufo Castillo</strong>";
+
+--- este fue el documento que yo utilice para agregar las respuestas a las etiquetas <li>
+	//creación de información 
+         document.getElementById("nombre").innerHTML="<strong>Javier Efrén Marrufo Castillo</strong>";
          document.getElementById("pasatiempo").innerHTML= "<strong>i liked to play some videogames, some sports like<strong>" +
          "<strong>voleyball and basketball</strong>";
          document.getElementById("ciudad_natal").innerHTML ="<strong>i was born in Chetumal the capital of Quintana Roo</strong>";
@@ -15,4 +16,41 @@
 
 
 3.	¿Qué debería realizar si deseo eliminar los elementos de la lista al realizar un click al listado?
+
 	deberia de utilizar una combinacion entre remove y onclick para activar el propio remove.
+
+
+Respuestas Ejercicio Ex_02
+1. ¿Qué código utilizas para crear una imagen nueva?	
+var libros = [
+	{title: 'El diseño de EveryDay Things',
+-------------img: 'http://ecx.images-amazon.com/images/I/41j2ODGkJDL._AA115_.jpg',
+	autor: 'Don Norman',
+	alreadyRead: false
+}
+
+2. ¿Qué código se encarga de agregar todos los elementos al body?
+	
+	document.body.appendChild(libroList);	
+
+3.	Identifica el arreglo en el código y escríbelo como si fuera una tabla una base de datos (Filas y Columnas).
+
+for (var i = 0; i <libros.length; i ++) {
+	var libroElem = document.createElement('li');
+	var libroImg = document.createElement('img');
+  	libroImg.src = libros[i].img;
+  	libroElem.appendChild(libroImg);
+  	var libroDesc = document.createTextNode (libros[i].title + ' por ' + libros[i].autor);
+  	libroElem.appendChild(libroDesc);
+  	if (libros[i].alreadyRead) {
+  	libroElem.style.color = 'grey';
+}
+
+	crear elemento listado 
+	crear elemento imagen
+	imagen del libro en su posición "i"
+	añadir el nodo imágenes libro como hijo en elementos libro
+	creación de texto libros en su posición i de título "por” más libros en su posición i de autores
+	añadir el nodo descripción libro en elementos libro 
+	sí libros en su posición i ya fue leído se coloca en color gris
+	
